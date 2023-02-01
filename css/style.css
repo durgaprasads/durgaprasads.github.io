@@ -1,0 +1,119 @@
+html, body, .wrapper
+{  
+background-size: cover;  
+font-family: sans-serif;  
+margin: 0;
+padding: 0;
+width: 100%;
+}  
+header{
+    height:50px;
+    background: black;
+    color: white;
+    position: relative;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+header .nav{
+    position: absolute;
+    height: 50px;
+    right:0;
+    top:0;
+    display: flex;
+
+}
+header .nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding:10px;
+    margin: 0 5px;
+    line-height: 30px;
+}
+header .nav a:hover{
+    cursor: pointer;
+    color: #FFAD01;
+}
+.container{
+    width: 100%;
+    font-size: 0;
+}
+
+.container.about-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-left: 20px;
+
+}
+.person{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px;
+    color: black;
+}.education{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    margin: 20px;
+    color: black;
+}
+.person img{
+    width: 150px;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.person .about{
+    line-height: 20px;
+
+}
+
+.person .about a{
+    font-size: 16px;
+    padding: 5px;
+
+}
+    
+ h4{
+    font-size:18px;
+    font-weight:bold;
+    }  
+    p,li{
+       font-size:16px;
+       }
+       
+
+@media only screen and (max-width: 780px) {
+
+    header{
+        height:auto;
+        background: black;
+        color: white;
+        position: relative;
+        line-height: 30px;
+        width: 100%;
+    }
+header .nav{
+    position: static;
+}
+header .nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    margin: 0;
+}
+
+.about img{
+   width: 100px;
+      height: 100px;
+}
+.container.about-container{
+    flex-direction: column;
+}
+
+}
